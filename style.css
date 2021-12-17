@@ -1,0 +1,201 @@
+/* ===== =====>> Poppins Google Font <<===== =====  */
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+
+/* ===== =====>> Universal Selector <<===== =====  */
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* ===== =====>> Body Html Selector <<===== =====  */
+html {
+  font-size: 10px; /* Here 10px = 1rem */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #2b6cb0;
+}
+
+.container .heading h1 {
+  font-size: 4.6rem;
+  color: #fff;
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+
+.container .cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 80%;
+}
+
+.container .cards .card {
+  position: relative;
+  width: 30rem;
+  text-align: center;
+  background: #fff;
+  border-radius: 0.8rem 0 0 0.8rem;
+  box-sizing: border-box;
+  padding: 2.5rem;
+  box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.container .cards .card:hover {
+  transform: scale(1.05);
+}
+
+.container .cards .card:nth-child(1) {
+  height: 48rem;
+}
+
+.container .cards .card:nth-child(2) {
+  height: 53rem;
+}
+
+.container .cards .card:nth-child(3) {
+  height: 58rem;
+  border-radius: 0.8rem;
+}
+
+.container .cards .card .tag {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 1.2rem;
+  background: #2c5282;
+  color: #fff;
+  padding: 0.2rem 0.8rem;
+  border-radius: 0.4rem;
+}
+
+.container .cards .card .icon .ri {
+  font-size: 8rem;
+  color: #4a5568;
+}
+
+.container .cards .card .plans {
+  margin: 1.2rem 0;
+}
+
+.container .cards .card .plans .tittle h1,
+.container .cards .card .plans h2 span {
+  font-size: 1.6rem;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  color: #4a5568;
+}
+
+.container .cards .card .plans h2 .text1 {
+  font-size: 1.6rem;
+  color: #718096;
+  text-decoration: line-through;
+  font-weight: 300;
+}
+
+.container .cards .card .plans h2 .text2 {
+  font-size: 2.2rem;
+  margin-left: 1.2rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.container .cards .card .plans h2 .text2 span {
+  position: relative;
+  bottom: 0.8rem;
+  font-weight: 700;
+}
+
+.container .cards .card ul {
+  text-align: start;
+  margin-top: 2.5rem;
+}
+
+.container .cards .card ul li {
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 1.8rem;
+  margin: 0.5rem 0;
+}
+
+.container .cards .card ul li .ri {
+  font-size: 2rem;
+  margin-right: 0.5rem;
+  color: #4299e1;
+}
+
+.container .cards .card button {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 80%;
+  font-size: 1.4rem;
+  padding: 1.2rem 0;
+  color: #fff;
+  background: #4a5568;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.container .cards .card:nth-child(1) button {
+  background: #a0aec0;
+  color: #fff;
+}
+
+.container .cards .card button:hover {
+  background: #a0aec0;
+  color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 9px; /* Here 9px = 1rem */
+  }
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 8px; /* Here 8px = 1rem */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 10px; /* Here 10px = 1rem */
+  }
+
+  .container .heading h1 {
+    font-size: 3.5rem;
+    margin: 2.5rem 0;
+    margin-bottom: 5rem;
+    line-height: 3.8rem;
+  }
+
+  .container .cards {
+    flex-direction: column;
+    row-gap: 2.5rem;
+  }
+
+  .container .cards .card {
+    border-radius: 0.8rem;
+  }
+}
